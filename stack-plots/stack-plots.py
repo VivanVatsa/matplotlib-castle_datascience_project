@@ -5,6 +5,7 @@
 from matplotlib import pyplot as plt
 plt.style.use("fivethirtyeight")
 
+# harcoded data
 minutes = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 player1 = [8, 6, 5, 5, 4, 2, 1, 1, 0]
@@ -22,6 +23,8 @@ plt.legend(loc = 'lower left')
 plt.title("viv Stack Plot")
 plt.tight_layout()
 plt.show()
+
+
 # Colors:
 # Blue = #008fd5
 # Red = #fc4f30
