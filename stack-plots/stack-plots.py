@@ -1,6 +1,7 @@
 # stack-plot = can be plotted when
 # if there is a total and want of breakdown of a total is required
 # PTR = always check stack plot maintains constant total
+
 from matplotlib import pyplot as plt
 plt.style.use("fivethirtyeight")
 
@@ -17,11 +18,10 @@ plt.stackplot(minutes, player1, player2, player3, labels=labels, colors=colors)
 
 plt.legend(loc = 'lower left')
 # plt.legend() - default legend = it already find a suitable place, but for manual placement
-
+ 
 plt.title("viv Stack Plot")
 plt.tight_layout()
 plt.show()
-
 # Colors:
 # Blue = #008fd5
 # Red = #fc4f30
