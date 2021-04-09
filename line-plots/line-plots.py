@@ -14,11 +14,11 @@ plt.plot(ages, py_salaries, label='Python')
 
 overall_median = 57287
 # alpha = to modify the intensity of the filled graph/plot
-plt.fill_between(ages, py_salaries, overall_median, 
-	where = (py_salaries > overall_median), interpolate=True,alpha=0.25)
+plt.fill_between(ages, py_salaries, dev_salaries, 
+	where = (py_salaries > dev_salaries), interpolate=True,alpha=0.25, label = 'above avg')
 
-plt.fill_between(ages, py_salaries, overall_median, 
-	where = (py_salaries <= overall_median), interpolate=True, color = 'red', alpha=0.25)
+plt.fill_between(ages, py_salaries, dev_salaries, 
+	where = (py_salaries <= dev_salaries), interpolate=True, color = 'red', alpha=0.25, label = 'below avg')
 
 
 plt.legend()
