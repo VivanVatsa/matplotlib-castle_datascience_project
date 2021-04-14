@@ -7,6 +7,8 @@ plt.style.use('seaborn')
 
 data = pd.read_csv('data.csv')
 
+# data recieved was inputting as a string
+# changing into to datetime data type format
 data['Date'] = pd.to_datetime(data['Date'])
 data.sort_values('Date', inplace=True)
 
