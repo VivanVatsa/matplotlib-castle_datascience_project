@@ -11,25 +11,44 @@ y_vals = []
 
 index = count()
 
+
 def animate(i):
-    x_vals.append(next(index))
-    y_vals.append(random.randint(0, 5))
+    data = pd.read_csv('data.csv')
+    x = data['x_value']
+    y1 = data['total_1']
+    y2 = data['total_2']
 
     plt.cla()
-    plt.plot(x_vals, y_vals)
+
+    plt.plot(x, y1, label='Channel 1')
+    plt.plot(x, y2, label='Channel 2')
     # output => random lines with random colors!!
-    # why? => there are multiple lines are just stacking up & they are just being covered up and no info is seen
-    # 
- 
+	# why? => there are multiple lines are just stacking up & they are just being covered up and no info is seen
+	
+    plt.legend(loc='upper left')
+    plt.tight_layout()
+
+
+# def animate(i):
+# 	data = pd.read_csv('data.csv')
+# 	x = data['x_value']
+# 	y1 = data['total_1']
+# 	y2 = data['total_2']
+
+#     plt.cla()
+#     plt.plot(x,y1, label='channel 1')
+#     plt.plot(x,y2, label='channel 2')
+
+#     # 
+#     plt.legend(loc='upper left')
+
+
 ani = FuncAnimation(plt.gcf(), animate, interval=1000) 
 
 plt.tight_layout()
 plt.show()
 
-
-# data = pd.read_csv('data.csv')
-# x = data['x_value']
-# y1 = data['total_1']
-# y2 = data['total_2']
-
 # plt.plot(x_vals, y_vals)
+# x_vals.append(next(index))
+#     y_vals.append(random.randint(0, 5))
+    # plt.plot(x_vals, y_vals)
