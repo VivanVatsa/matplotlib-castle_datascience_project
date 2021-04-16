@@ -14,8 +14,9 @@ js_salaries = data['JavaScript']
 # # ax => axis (plot)
 # # subplot create a figure and then specify a certain number of rows & columns of axis!
 
-fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1)
-
+# fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1, sharex=True)
+fig1, ax1 = plt.subplots()
+fig2, ax2 = plt.subplots()
 
 ax1.plot(ages, dev_salaries, color='#444444',
          linestyle='--', label='All Devs')
@@ -26,7 +27,7 @@ ax2.plot(ages, js_salaries, label='JavaScript')
 
 ax1.legend()
 ax1.set_title('Median Salary (USD) by Age')
-ax1.set_xlabel('Ages')
+# ax1.set_xlabel('Ages')
 ax1.set_ylabel('Median Salary (USD)')
 
 
@@ -40,12 +41,13 @@ plt.tight_layout()
 plt.show()
 
 
+# saving the figures/plots generated
+fig1.savefig('fig1.png')
+fig2.savefig('fig2.png')
+
 
 # =====
 # fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1)
-
-
-
 
 # print (ax1)
 # print (ax2)
