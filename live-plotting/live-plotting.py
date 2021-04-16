@@ -11,7 +11,6 @@ y_vals = []
 
 index = count()
 
-
 def animate(i):
     data = pd.read_csv('data.csv')
     x = data['x_value']
@@ -41,7 +40,6 @@ def animate(i):
 
 #     # 
 #     plt.legend(loc='upper left')
-
 
 ani = FuncAnimation(plt.gcf(), animate, interval=1000) 
 
