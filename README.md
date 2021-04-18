@@ -7,3 +7,7 @@ indexing all of my matplotlib magic from line graphs to advance visualisation te
 4. line plots
 5. histograms
 6. stack plots
+7. scatter plots
+8. line plots
+9. time-series plot
+10. sub plots
