@@ -8,13 +8,13 @@
 
 indexing all of my matplotlib magic from line graphs to advance visualisation techniques under one roof.
 ===
-1. bar charts
-2. pie charts
-3. scatter plots
-4. line plots
-5. histograms
-6. stack plots
-7. scatter plots
-8. line plots
-9. time-series plot
-10. sub plots
+1. Bar charts
+2. Pie charts
+3. Scatter plots
+4. Line plots
+5. Histograms
+6. Stack plots
+7. Scatter plots
+8. Line plots
+9. Time-series plot
+10. Sub plots
